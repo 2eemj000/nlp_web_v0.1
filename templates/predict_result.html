@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block sub_title %}리뷰의 감정분석 결과는?{% endblock %}
+{% block main %}
+<strong>{{result.review}}</strong>의 감정은 <strong>{{result.review_result}}</strong>입니다. <!--app.py에서 key, value로 잡아둠-->
+{% endblock %}

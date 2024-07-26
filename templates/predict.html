@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block sub_title %}리뷰를 남겨주세요{% endblock %}
+
+{% block main %}
+<form action="/predict" method="post">
+    <table class="table table-borderless">
+        <tr>
+            <td>영화감상평</td>
+            <td>
+                <textarea class="form-control" rows="5" name="review"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <button type="submit" class="btn btn-primary">실행</button>
+            </td>
+        </tr>
+    </table>
+</form>
+{% endblock %}
