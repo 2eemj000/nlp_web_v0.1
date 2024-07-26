@@ -64,3 +64,4 @@ def index():
 if __name__ == "__main__":
     load_lr() # 순서 중요 !
     app.run(port=5001)
+    ##
